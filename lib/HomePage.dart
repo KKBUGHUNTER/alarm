@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'settings.dart';
 import 'setalarm.dart';
-
+import 'home.dart';
 class HomePage extends StatelessWidget {
   static const String _title = 'Flutter Code Sample';
 
@@ -26,10 +26,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
+    Home(),
     SetAlarmPage(),
     Text(
       'Index 2: Group',
@@ -53,7 +50,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
+        
       ),
+      
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.indigo[400],
