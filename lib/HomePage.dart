@@ -60,7 +60,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         foregroundColor: Colors.orange,
         elevation: 0,
         onPressed: () {
-          // Add your onPressed code here!
+          _onItemTapped(1);
         },
         child: const Icon(Icons.add),
       ),
@@ -73,33 +73,25 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             IconButton(
               icon: Icon(Icons.home),
               onPressed: () {
-                setState(() {
-                  _selectedIndex = 0;
-                });
+                _onItemTapped(0);
               },
             ),
             IconButton(
               icon: Icon(Icons.alarm),
               onPressed: () {
-                setState(() {
-                  _selectedIndex = 1;
-                });
+                _onItemTapped(1);
               },
             ),
             IconButton(
               icon: Icon(Icons.group),
               onPressed: () {
-                setState(() {
-                  _selectedIndex = 2;
-                });
+                _onItemTapped(2);
               },
             ),
             IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
-                setState(() {
-                  _selectedIndex = 3;
-                });
+                _onItemTapped(3);
               },
             ),
           ],

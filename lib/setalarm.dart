@@ -23,9 +23,6 @@ class _SetAlarmPageState extends State<SetAlarmPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Set Alarm'),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -47,8 +44,6 @@ class _SetAlarmPageState extends State<SetAlarmPage> {
           ],
         ),
       ),
-      
-      
     );
   }
 }
