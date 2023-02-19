@@ -7,7 +7,6 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: const Center(
         child: Text('Boopathy Raj Develope This page'),
-        
       ),
     );
   }
