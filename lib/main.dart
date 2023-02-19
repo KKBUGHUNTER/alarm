@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
-      title: "Cyber Alarm",
+      title: "Alarm",
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
